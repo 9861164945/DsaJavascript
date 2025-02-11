@@ -14,6 +14,7 @@ arr.push(arr[index-1]+arr[index-2]);
 console.log(arr);
 };
 fibonacciSeries(5);
+
 // using Recursion here out put = input n=3 putput-2
 const usingRecursion=function(n){
     if(n<=1) return n;

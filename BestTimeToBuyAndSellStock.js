@@ -32,16 +32,16 @@ const buySellStockMaxProfit=function(arr)
 console.log(buySellStockMaxProfit([1,2,3,4,56,7]));
 //by using Greedy Algorithm
 const byusingGreddyAlgoBuySellStock=function(arr){
-
+//In this step first i declare my arr[0]=min ;
     let minStockPurchasePrice=arr[0];
     let maxProfit=0;
     for (let i = 1; i < arr.length; i++) 
         {
-            if(arr[i]<minStockPurchasePrice)
+            if(arr[i]<minStockPurchasePrice)//agar arr[i]mera min se large hua to min =atr[i]
 {
     minStockPurchasePrice=arr[i]
 }
-let currentProfit=arr[i]-minStockPurchasePrice;
+let currentProfit=arr[i]-minStockPurchasePrice;//curr =res and comparing with maxprofit:
 maxProfit=Math.max(maxProfit,currentProfit);
         
     }
